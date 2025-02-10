@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: rgb(3, 37, 53);
+    color: whitesmoke;
+    height: 3rem;
+    width: 100%;
+    font-size: 20px;
+    align-items: start;
+    line-height: 3rem;
+    padding: 0 12px;
+    display: flex;
+}
+
+nav ul{
+    list-style-type: none; /*removes bullets*/
+}
+
+h1{
+    padding-top: 20px;
+}
+
+body{
+    background-color: rgb(197, 224, 244);
+    text-align: center;
+    justify-content: center;
+    /* padding: 40px; */
+}
+
+.container{
+    height: 58vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height: 50vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 0.1px;
+    position: relative;
+}
+
+/* .line{
+    background-color: black;
+    height: 2px;
+    width: 50vh;
+    position: absolute;
+    transform: translate(0vw, 25vw) rotate(90deg); 
+} */
+
+.box:hover{
+    background-color: rgb(130, 202, 235);
+}
+
+.box{
+    background-color: rgb(158, 214, 240);
+    height: 18vmin;
+    width: 18vmin;
+    font-size: 8vmin;
+    color: black;
+}
+
+.bt-0{
+    border-top: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+#turn{
+    padding: 20px;
+}
+
+#reset,#newGame{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: rgb(3, 37, 53);
+    color: whitesmoke;
+    border-radius: 1rem;
+    border: none;
+}
+
+#msg{
+    font-weight: 100;
+    font-size: 8vmin;
+    padding: 5px;
+}
+
+.winnerMsg{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+img{
+    /* height: 150px;
+    width: 150px; */
+    object-fit: cover;
+    align-items: center;
+    justify-items: center;
+    padding-right: 60px;
+    padding-bottom: 10px;
+}
+
+.hide{
+    display: None;
+}
+
+@media screen and (max-width: 950px)
+{
+    .container{
+        flex-wrap: wrap;
+    }
+    .winnerMsg{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    #msg{ 
+        font-size: 2.5rem;
+    }
+    /* line{
+        width: 30vh;
+    } */
+}
